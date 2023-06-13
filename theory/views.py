@@ -11,6 +11,7 @@ def theory(request):
     theorys = Theory.objects.all()
     return render(request, 'theory/theory.html', {'theorys': theorys})
 
+
 def detail(request, theory_id):
     theory = get_object_or_404(Theory, pk=theory_id)
-    return render(request, 'theory/detail.html', {'theory':theory})
+    return render(request, 'theory/detail.html', {'theory': theory})

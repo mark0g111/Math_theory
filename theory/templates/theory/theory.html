@@ -1,5 +1,10 @@
+{% extends 'theory/base.html' %}
+{% block content %}
+
 <h1>Теория</h1>
 
 {% for theory in theorys %}
 <a href="{% url 'theory:detail' theory.id %}"><h2>{{theory.title}}</h2></a>
 {% endfor %}
+
+{% endblock %}
