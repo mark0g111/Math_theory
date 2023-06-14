@@ -27,10 +27,20 @@
     </nav>
 
     <title>Math Theory</title>
+
+    <style>
+      .gradient {
+      background: rgb(217,216,217);
+background: radial-gradient(circle, rgba(217,216,217,0.5970763305322129) 0%, rgba(213,213,191,0.5018382352941176) 50%, rgba(152,204,196,0.4990371148459384) 100%);
+      }
+    </style>
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
   </head>
-  <body>
-
+  <body class="gradient">
+    <br>
+    <br>
+    <br>
     {% block content %}{% endblock %}
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
