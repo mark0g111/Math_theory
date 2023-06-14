@@ -9,5 +9,5 @@ def questions(request):
 
 
 def detail(request, questions_id):
-    theory = get_object_or_404(Question, pk=questions_id)
-    return render(request, 'theory/detail.html', {'theory': theory})
+    questions = get_object_or_404(Question, pk=questions_id)
+    return render(request, 'questions/detail.html', {'questions': questions})

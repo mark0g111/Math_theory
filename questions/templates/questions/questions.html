@@ -4,7 +4,7 @@
 <h1>Контрольные вопросы</h1>
 
 {% for question in questions %}
-<a href="{% url 'questions:detail' questions.id %}"><h2>{{questions.title}}</h2></a>
+<a href="{% url 'questions:detail' question.id %}"><h2>{{question.title}}</h2></a>
 {% endfor %}
 
 {% endblock %}
