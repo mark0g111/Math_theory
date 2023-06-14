@@ -1,0 +1,10 @@
+{% extends 'theory/base.html' %}
+{% block content %}
+
+<h1>Контрольные вопросы</h1>
+
+{% for question in questions %}
+<a href="{% url 'questions:detail' questions.id %}"><h2>{{questions.title}}</h2></a>
+{% endfor %}
+
+{% endblock %}
