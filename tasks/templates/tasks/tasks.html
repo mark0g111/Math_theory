@@ -28,7 +28,7 @@
    }
    </style>
 
-{% for question in questions %}
+{% for task in tasks %}
 <a href="{% url 'tasks:detail' task.id %}" class="btn"><h2>{{task.title}}</h2></a>
     <br>
     <br>

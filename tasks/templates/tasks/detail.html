@@ -5,13 +5,14 @@
 <br>
 <br>
 <div class="container text-center">
-    <p><font size="6">{{tasks.description}}</font></p>
+    {% load static %}
+    <p>{{tasks.description}}</p>
     <br>
     <br>
     <br>
     <br>
     <br>
-    <a href="{% url 'questions:questions' %}"><font size="6"><- Назад</font></a>
+    <a href="{% url 'tasks:tasks' %}"><font size="6"><- Назад</font></a>
 </div>
 
 {% endblock %}
