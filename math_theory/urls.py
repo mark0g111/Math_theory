@@ -23,4 +23,5 @@ urlpatterns = [
     path('', views.home, name='home'),
     path('theory/', include('theory.urls')),
     path('questions/', include('questions.urls')),
+    path('tasks/', include('tasks.urls')),
 ]
